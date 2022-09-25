@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Board</title>
+<style type="text/css">
+fieldset{
+text-align: left;
+width: 100px;
+margin: auto;
+}
+</style>
+</head>
+<body>
+<fieldset>
+<form action="Index.html">
+<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+&nbsp;&nbsp;<option selected>메뉴를 선택하세요</option>
+  <option value="1">배송</option>
+  <option value="2">주문</option>
+</select>
+</form>
+<div class="form-floating mb-3">
+제목&nbsp;<input type="text" class="form-control" name="floatingInput" placeholder="제목을 입력하세요">
+<label for="floatingInput"></label>
+</div>
+<div class="form-floating mb-3">
+작성자&nbsp;<input type="text" class="form-control" name="name" placeholder="닉네임&이름 입력하세요">
+<label for="floatingInput"></label>
+</div>
+<form action="Index.html">
+  <label for="birthday">작성일</label>
+  <input type="date" id="birthday" name="birthday">
+</form>
+<br>
+<textarea name="content" cols="30" rows="5">내용을 입력하세요</textarea>
+<br>
+<br>
+<form action="">
+<input type="submit" onclick="location.href='Index.html'; alert('등록완료!')" value="등록">
+<input type="reset" onclick="location.href='Index.html'; alert('취소완료')" value="취소">
+</form>
+</fieldset>
+
+</body>
+</html>
